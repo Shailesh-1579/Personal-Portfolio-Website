@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(5, 55, 78);
+    color: azure;
+    font-family: "Ubuntu", serif;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(3, 75, 104);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+    
+}
+
+nav ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: cadetblue;
+    font-size: 1.03rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.firstsection>div {
+    width: 40%;
+}
+
+.orange {
+    color: aqua;
+}
+
+#element {
+    color: aqua;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 5%;
+  margin-top: 150px;
+}
+
+.leftsection {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+  font-size: 3rem;
+}
+
+.rightsection {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.rightsection img {
+  width: 80%;
+  height: auto;
+  max-width: 400px;
+}
+
+.leftsection .button{
+   background-color: aqua;
+   padding: 10px;
+   font-size: 1.5rem;
+   margin: 40px;
+   display: flex;
+   
+}
+
+.secondsection h1,
+.thirdsection h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+
+
+
+.title {
+  margin-bottom: 40px;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1280px; /* Optional, keeps layout neat */
+  margin: 0 auto;
+}
+
+.hidden-card {
+  display: none;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 5px solid transparent;
+  color: #facc15;
+   width: calc(25% - 20px); /* 4 cards per row minus gap */
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.yellow-border {
+  border-color: #facc15; /* yellow-400 */
+}
+
+.blue-border {
+  border-color: #3b82f6; /* blue-500 */
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #1e40af;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1a3b8f;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.thirdsection {
+  padding: 50px 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.github-btn {
+  text-decoration: none;
+  background-color: #1e40af;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.github-btn:hover {
+  background-color: #1a368f;
+}
+
+.fourthsection {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1a368f;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1e40af;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-btn:hover {
+  background-color: #1a368f;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+

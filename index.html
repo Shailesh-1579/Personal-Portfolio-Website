@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shailesh-Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shailesh's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#certificateList">COURSES/CERTIFICATION</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi , My name is <span class="orange">Shailesh</span>
+                <div>
+                    And i am a passionate
+                </div>
+                <span id="element"></span>
+                <button class="button"><a
+                        href="https://docs.google.com/document/d/18zWY6Ku8Zz62xs-5inyShLDIfC_o_NGc/edit?usp=drive_link&ouid=115240311328769359906&rtpof=true&sd=true"
+                        target="_blank">Download
+                        Resume</a></button>
+            </div>
+            <div class="rightsection">
+                <img src="rb_1351.png">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <h1 class="title" id="certificateList">Courses / Certifications</h1>
+
+            <div class="certificates">
+                <!-- Visible cards -->
+                <div class="certificate-card yellow-border">
+                    <h3>ISRO: AI/ML for Geodata Analysis</h3>
+                    <img src="Isro.PNG" alt="ISRO Certificate">
+                </div>
+
+                <div class="certificate-card blue-border">
+                    <h3>L&T: Customer Analytics</h3>
+                    <img src="customer.PNG" alt="Customer Analytics Certificate">
+                </div>
+
+                <div class="certificate-card yellow-border">
+                    <h3>DELOITTE: Data Analytics Job Simulation</h3>
+                    <img src="deloitte.PNG" alt="Deloitte Certificate">
+                </div>
+
+                <div class="certificate-card blue-border">
+                    <h3>L&T: Networking & Security</h3>
+                    <img src="networking.PNG" alt="Networking Certificate">
+                </div>
+
+                <!-- Hidden card -->
+                <div class="certificate-card yellow-border hidden-card">
+                    <h3>IBM: Clean, Refine, and Visualize Data</h3>
+                    <img src="Ibm.PNG" alt="IBM Certificate">
+                </div>
+
+                <div class="certificate-card blue-border hidden-card">
+                    <h3>TATA:Data Visualisation </h3>
+                    <img src="tata.PNG" alt="tata Certificate">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button onclick="showAll()" id="showBtn">Show All</button>
+                <button onclick="showLess()" id="hideBtn" style="display: none;">Show Less</button>
+            </div>
+
+        </section>
+
+        <section class="thirdsection" id="projects">
+            <h1 class="title">My Projects</h1>
+
+            <div class="projects">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <h3>IPL Analysis (2008-2025)</h3>
+                    <p>A data-driven analysis model that predicts IPL match outcomes based on team and player performance statistics.</p>
+                    <a href="https://github.com/Shailesh-1579/IPL-Analysis-2008-2025-" target="_blank"
+                        class="github-btn">View on GitHub</a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <h3>AI Resume Analyzer</h3>
+                    <p>An AI-powered tool that analyzes resumes to evaluate skills, match job descriptions, and provide improvement suggestions.</p>
+                    <a href="https://github.com/Shailesh-1579/AI-Resume-Analyzer" target="_blank" class="github-btn">View
+                        on GitHub</a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio built with HTML, CSS, and JavaScript (this one!).</p>
+                    <a href="https://github.com/yourusername/portfolio" target="_blank" class="github-btn">View on
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourthsection" id="contact">
+            <h1 class="title">Contact Me</h1>
+
+            <form class="contact-form" action="https://formspree.io/f/movlnnae" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/Shailesh-1579" target="_blank" class="social-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="icon">GitHub</a>
+                <a href="https://www.linkedin.com/in/shailesh-prajapati-5927b5358" target="_blank" class="social-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                        class="icon">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', 'Data Analyst.'],
+            typeSpeed: 50,
+        });
+
+        function showAll() {
+            const hiddenCards = document.querySelectorAll('.hidden-card');
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden-card');
+            });
+
+            // Toggle buttons
+            document.getElementById('showBtn').style.display = 'none';
+            document.getElementById('hideBtn').style.display = 'inline-block';
+        }
+
+        function showLess() {
+            const certificateCards = document.querySelectorAll('.certificate-card');
+            certificateCards.forEach((card, index) => {
+                if (index >= 4) {
+                    card.classList.add('hidden-card');
+                }
+            });
+
+            // Toggle buttons
+            document.getElementById('showBtn').style.display = 'inline-block';
+            document.getElementById('hideBtn').style.display = 'none';
+        }
+    
+    </script>
+</body>
+
+</html>
